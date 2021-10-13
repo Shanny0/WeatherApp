@@ -1,38 +1,72 @@
 .App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("https://images.pexels.com/photos/2695682/pexels-photo-2695682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "roboto";
+}
+
+.content {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(17px);
+          backdrop-filter: blur(17px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.content .form {
+  margin-top: 20px;
+}
+
+.content .form #input_text {
+  padding: 0 10px;
+  width: 350px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+}
+
+.content .form #input_text:focus {
+  outline: none;
+}
+
+.content .form .submit {
+  cursor: pointer;
+  position: relative;
+  top: 3px;
+  right: 50px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  width: 50px;
+  height: 40px;
+  background-color: transparent;
+}
+
+.content .temp_data {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content .temp_data .temperature {
+  font-size: 10rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content .temp_data .city {
+  position: relative;
+  right: 20px;
+  font-size: 5rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=App.css.map */
