@@ -7,13 +7,7 @@ function App() {
   const [value, setvalue] = useState("London")
 
   useEffect(() => {
-    fetch("https://community-open-weather-map.p.rapidapi.com/weather?q=London%2Cuk&lat=0&lon=0&callback=test&id=2172797&lang=null&units=imperial&mode=xml", {
-      "method": "GET",
-      "headers": {
-        "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
-        "x-rapidapi-key": "bebf6a999bmsh550618a16d0d2f5p1aca13jsn7a1843ff29ef"
-      }
-    })
+    fetch("https://community-open-weather-map.p.rapidapi.com/weather?q=London%2Cuk&lat=0&lon=0&callback=test&id=2172797&lang=null&units=imperial&mode=xml")
     .then(response => {
       console.log(response);
     })
