@@ -56,6 +56,11 @@
   background-color: transparent;
 }
 
+.content .city_dont_found {
+  margin-top: 10%;
+  font-size: 5rem;
+}
+
 .content .temp_data {
   text-align: center;
 }
